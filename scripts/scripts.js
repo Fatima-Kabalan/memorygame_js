@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll('.card');
 const p = document.getElementById("parag");
 
+
 let flippedcard = false;
 let firstcard, secondcard ;
 let score = 0 ;
