@@ -23,7 +23,14 @@ function  flipcard() {
     else{
         flippedcard = false;
         secondcard = this ;
+
+        // Check matching cards 
+        // console.log(firstcard.name);
+        console.log(secondcard.dataset.name);
+        
     }
+
+
 }
 
 
