@@ -3,14 +3,14 @@ body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-  
 }
+
 .container{
     width:100%;
     align-self: center;
     height:100vh;
     display:grid;
-    gap:50px;
+    gap:40px;
     perspective: 800px;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px ;
@@ -20,7 +20,6 @@ body{
    position:relative;
    transform-style: preserve-3d;
    user-select: none;
-   /* pointer-events:none; */
    transition: all 0.5s ease-in;
 }
 
@@ -50,5 +49,5 @@ body{
 }
 
 .parag{
-    font-size:20px;
+    font-size:50px;
 }

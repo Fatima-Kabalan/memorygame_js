@@ -1,16 +1,12 @@
 const cards = document.querySelectorAll('.card');
 const p = document.getElementById("parag");
-// cards.forEach((card)=>{
-//   card.addEventListener( 'click', function() {
-//     card.classList.toggle('flip');
-//   });
-// });
 
 let flippedcard = false;
 let firstcard, secondcard ;
 let score = 0 ;
 let count = 0 ;
 
+// counting the clicks on cards and checking the matched ones 
 function  flipcard() {
     this.classList.add('flip');
     if (!flippedcard){
@@ -20,7 +16,6 @@ function  flipcard() {
         console.log({flippedcard});
         count++;
         console.log(count);
-
     }
     else{
         flippedcard = false;
@@ -31,16 +26,16 @@ function  flipcard() {
     }
 }
   
+
 function checkMatch(){
     // Check matching cards 
     let a = firstcard.dataset.name;
     let b = secondcard.dataset.name;
-//    let score = 0 ;
     if(a == b){
         score++;
         firstcard.removeEventListener('click',flipcard);
         secondcard.removeEventListener('click',flipcard);
-        p.innerHTML = score;            
+        p.innerHTML = score ;            
     }else{
         //cards are not matching 
         // settimeout is to have enough time to see cards flipping 
@@ -57,7 +52,7 @@ function checkMatch(){
     }
 }
 
-
+// To keep the cards flipped after clicking on them 
 function disablecards(){
     firstcard.removeEventListener('click',flipcard);
     secondcard.removeEventListener('click',flipcard);
