@@ -23,6 +23,7 @@ function  flipcard() {
         count++;
         console.log(count);
         checkMatch();
+        p.innerHTML = score ;   
     }
 }
   
@@ -35,7 +36,8 @@ function checkMatch(){
         score++;
         firstcard.removeEventListener('click',flipcard);
         secondcard.removeEventListener('click',flipcard);
-        p.innerHTML = score ;            
+        firstcard.classList.add('hidden');
+        secondcard.classList.add('hidden');         
     }else{
         //cards are not matching 
         // settimeout is to have enough time to see cards flipping 

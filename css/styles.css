@@ -47,6 +47,9 @@ body{
 .flip{
     transform: rotateY(180deg);
 }
+.hidden{
+    display:none;
+}
 
 .parag{
     font-size:50px;
