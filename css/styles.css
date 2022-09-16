@@ -2,7 +2,9 @@
 /* Utilities */
 
 .container{
+    display:grid;
     padding: 2rem;
+    gap: 50px;
 }
 
 
@@ -48,10 +50,11 @@
     transform: rotateY(180deg);
 }
 
-.cards-first-row{
+.cards-row{
     display:grid;
     grid-template-columns: 200px 200px 200px;
-    gap: 400px;
+    gap:200px;
+   
 }
 
 .background-position{
